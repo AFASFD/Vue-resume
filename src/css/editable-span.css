@@ -1,0 +1,8 @@
+.editableSpan input {
+  padding: 0;
+  border: none;
+  box-sizing: border-box;
+  font-size: inherit;
+  max-width: 500px;
+  overflow: hidden;
+}

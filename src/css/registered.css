@@ -1,0 +1,118 @@
+.registered {
+  width: 100%;
+  height: 100%;
+  background: #040404; }
+
+.registered .signInWrapper {
+  position: fixed;
+  height: 370px;
+  width: 370px;
+  background: #eaecf3;
+  left: 0;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  margin: auto;
+  padding: 40px;
+  border-radius: 15px; }
+
+.registered h2 {
+  margin: 25px 0;
+  font-size: 30px;
+  text-align: center; }
+
+.registered .signInWrapper a:nth-child(1) {
+  position: absolute;
+  right: 10px;
+  top: 10px;
+  text-decoration: none;
+  color: black;
+  font-size: 20px;
+  line-height: 15px; }
+
+.registered .signInWrapper .form input {
+  width: 100%;
+  height: 44px;
+  font-size: 16px;
+  margin-bottom: 10px;
+  border-top: 1px solid #c0c0c0;
+  border: 1px solid #d9d9d9;
+  border-radius: 2px;
+  padding: 0 8px; }
+
+.registered .signInWrapper .form a {
+  text-decoration: none;
+  margin-right: 2em;
+  color: #4f90fc; }
+
+.registered .signUpSuccess {
+  display: none;
+  width: 370px;
+  height: 370px;
+  background: #e9ebf2;
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  margin: auto;
+  border-radius: 15px; }
+
+.registered .signUpSuccess.active {
+  display: block; }
+
+.registered .signUpSuccess p {
+  text-align: center;
+  font-size: 30px; }
+
+* {
+  box-sizing: border-box; }
+
+body {
+  font-size: 16px;
+  line-height: 1.875em; }
+
+.container {
+  margin: 20px auto;
+  padding: 40px 0;
+  max-width: 500px;
+  text-align: center; }
+
+.icon-circle {
+  display: inline-block;
+  margin: 0 20px; }
+
+.icon-circle {
+  position: relative;
+  width: 100px;
+  height: 100px;
+  border-radius: 50%;
+  animation: scale 0.35s cubic-bezier(0, 0.5, 0.2, 1.5) forwards; }
+  .icon-circle .icon-svg {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    width: 50%;
+    height: 50%;
+    transform: translate(-50%, -50%); }
+  .icon-circle .icon-svg-line {
+    fill: none;
+    stroke: #fff;
+    stroke-width: 4;
+    stroke-miterlimit: 10;
+    stroke-dasharray: 53;
+    stroke-dashoffset: 53;
+    animation: dashoffset 0.35s 0.35s ease-in-out forwards; }
+
+.icon-success {
+  background-color: #52b46a; }
+
+@keyframes dashoffset {
+  100% {
+    stroke-dashoffset: 0; } }
+
+@keyframes scale {
+  0% {
+    transform: scale(0); }
+  100% {
+    transform: scale(1); } }

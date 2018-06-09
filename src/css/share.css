@@ -1,0 +1,24 @@
+.share {
+  position: fixed;
+  width: 100%;
+  height: 100%;
+  color: #fdfdfd;
+  background: #28333f;
+  left: 0;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  margin: auto;
+  padding: 15px;
+}
+.share a {
+  display: block;
+  color: #fdfdfd;
+  text-decoration: none;
+  margin-bottom: 20px;
+}
+.share textarea {
+  resize: none;
+  width: 100%;
+  word-break: break-all;
+}

@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link href="https://cdn.bootcss.com/minireset.css/0.0.2/minireset.css" rel="stylesheet">
+    <link rel="stylesheet" href="./css/index.css">
+    <link rel="stylesheet" href="./css/editable-span.css">
+    <link rel="stylesheet" href="./css/editable-textarea.css">
+    <link rel="stylesheet" href="./css/log-in.css">
+    <link rel="stylesheet" href="./css/registered.css">
+    <link rel="stylesheet" href="./css/share.css">
+    <title>在线简历</title>
+</head>
+
+<body>
+    <div class="page" id="app">
+        <router-view :current-user="currentUser" :resume="resume" :mode="mode" :share-link="shareLink" :preview-resume="previewResume"
+            @loginsuccess="logInSuccess"></router-view>
+        <!-- <app-main :current-user="currentUser" :resume="resume" :preview-resume="previewResume"></app-main> -->
+        <!-- <log-in v-show="loginVisible" @close="loginVisible=false" @loginsuccess="logInSuccess" @gotosignup="showSignUp"></log-in>
+        <sign-up v-show="registeredVisible" @close="registeredVisible=false" @signup="signUpSuccess" @gotologin="showLogin"></sign-up>
+        <share v-if="shareVisible" :sharelink="shareLink" @close="shareVisible=false"></share> -->
+    </div>
+    <script src="//at.alicdn.com/t/font_689752_ni9uhj01codjwcdi.js
+    "></script>
+    <script src="https://cdn.bootcss.com/clipboard.js/2.0.1/clipboard.min.js"></script>
+    <!-- 粘贴板 -->
+    <script src="https://cdn.bootcss.com/particles.js/2.0.0/particles.min.js"></script>
+    <!-- 粒子背景 -->
+    <script src="./vendor/av-min.js"></script>
+    <script src="./vendor/vue.min.js"></script>
+    <script src="./vendor/vue-router.min.js"></script>
+    <script src="./js/av.js"></script>
+    <script src="./js/editable-span.js"></script>
+    <script src="./js/editable-textarea.js"></script>
+    <script src="./js/share.js"></script>
+    <script src="./js/sign-up.js"></script>
+    <script src="./js/log-in.js"></script>
+    <script src="./js/resume.js"></script>
+    <script src="./js/app-aside.js"></script>
+    <script src="./js/app-main.js"></script>
+    <script src="./js/router.js"></script>
+    <!-- <script src="./js/app.js"></script>  -->
+</body>
+
+</html>
